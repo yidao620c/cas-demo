@@ -1,0 +1,130 @@
+cas:
+  adminPagesSecurity:
+    ip: 127.0.0.1
+  authn:
+#    rest:
+#      uri: http://localhost:8080/user/login
+#      passwordEncoder:
+#        type: DEFAULT
+#        characterEncoding: UTF-8
+#        encodingAlgorithm: MD5
+    accept:
+      users: test::test
+  logout:
+    followServiceRedirects: true
+  serviceRegistry:
+    initFromJson: true
+#    jdbc:
+#      query:
+#        - dialect: org.hibernate.dialect.MySQLDialect
+#          driverClass: com.mysql.cj.jdbc.Driver
+#          fieldDisabled: disabled
+#          fieldExpired: expired
+#          fieldPassword: password
+#          sql: select * from sys_user where username=?
+#          url: jdbc:mysql://127.0.0.1:3306/cas?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+#          user: test
+#          password: test
+#          passwordEncoder:
+#            type: com.xncoding.cas.CustomPasswordEncoder
+#            characterEncoding: UTF-8
+#            encodingAlgorithm: MD5
+#      encode:
+#        - dialect: org.hibernate.dialect.MySQLDialect
+#          driverClass: com.mysql.cj.jdbc.Driver
+#          disabledFieldName: disabled
+#          expiredFieldName: expired
+#          passwordFieldName: password
+#          sql: select * from sys_user_encode where username=?
+#          url: jdbc:mysql://127.0.0.1:3306/cas?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
+#          user: test
+#          password: test
+#          algorithmName: MD5 #对处理盐值后的算法
+#          numberOfIterations: 2 #加密迭代次数
+#          # numberOfIterationsFieldName: #该列名的值可替代上面的值，但对密码加密时必须取该值进行处理
+#          saltFieldName: username #盐值固定列
+#          staticSalt: . #静态盐值
+  server:
+    name: https://cas.server.com:8443
+    prefix: https://cas.server.com:8443/cas
+endpoints:
+  enabled: false
+  restart:
+    enabled: false
+  sensitive: true
+  shutdown:
+    enabled: false
+logging:
+  config: classpath:/log4j2.xml
+management:
+  add-application-context-header: false
+  context-path: /status
+  health:
+    status:
+      order: WARN, DOWN, OUT_OF_SERVICE, UNKNOWN, UP
+  security:
+    enabled: true
+    roles: ACTUATOR,ADMIN
+    sessions: if_required
+security:
+  basic:
+    authorize-mode: role
+    path: /cas/status/**
+server:
+  compression:
+    enabled: true
+    mime-types: application/javascript,application/json,application/xml,text/html,text/xml,text/plain
+  connection-timeout: 20000
+  context-parameters:
+    isLog4jAutoInitializationDisabled: true
+  context-path: /cas
+  error:
+    include-stacktrace: ALWAYS
+  max-http-header-size: 2097152
+  port: 8443
+  session:
+    cookie:
+      http-only: true
+    timeout: 300
+    tracking-modes: COOKIE
+  ssl:
+    key-alias: cas.server.com
+    keyPassword: changeit
+    keyStore: classpath:/casServer.keystore
+    keyStorePassword: changeit
+  tomcat:
+    accesslog:
+      enabled: true
+      pattern: '%t %a "%r" %s (%D ms)'
+      suffix: .log
+    basedir: build/tomcat
+    max-http-post-size: 2097152
+    max-threads: 200
+    min-spare-threads: 10
+    port-header: X-Forwarded-Port
+    protocol-header: X-Forwarded-Proto
+    protocol-header-https-value: https
+    remote-ip-header: X-FORWARDED-FOR
+    uri-encoding: UTF-8
+  use-forward-headers: true
+spring:
+  aop:
+    auto: true
+    proxy-target-class: true
+  cloud:
+    bus:
+      enabled: false
+    config:
+      allow-override: true
+      override-none: false
+      override-system-properties: false
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  thymeleaf:
+    cache: true
+    encoding: UTF-8
+    mode: HTML
+    template-resolver-order: 100
