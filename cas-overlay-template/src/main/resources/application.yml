@@ -1,6 +1,8 @@
 cas:
   adminPagesSecurity:
     ip: 127.0.0.1
+  theme:
+    defaultThemeName: app1
   authn:
 #    rest:
 #      uri: http://localhost:8080/user/login
@@ -13,7 +15,13 @@ cas:
   logout:
     followServiceRedirects: true
   serviceRegistry:
-    initFromJson: true
+    initFromJson: true #开启识别json文件，默认false
+    watcherEnabled: true #自动扫描服务配置，默认开启
+    schedule:
+      repeatInterval: 120000 #120秒扫描一遍
+      startDelay: 15000 #延迟15秒开启
+    json:
+      location: classpath:/services #默认json/yml资源加载路径为resources/services
 #    jdbc:
 #      query:
 #        - dialect: org.hibernate.dialect.MySQLDialect
