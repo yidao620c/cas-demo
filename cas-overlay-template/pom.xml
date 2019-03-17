@@ -74,7 +74,18 @@
                     <artifactId>cas-server-support-json-service-registry</artifactId>
                     <version>${cas.version}</version>
                 </dependency>
-
+                <!--redis支持，将票据存在redis，默认是内存中-->
+                <dependency>
+                    <groupId>org.apereo.cas</groupId>
+                    <artifactId>cas-server-support-redis-ticket-registry</artifactId>
+                    <version>${cas.version}</version>
+                </dependency>
+                <!--开启cas server的rest支持-->
+                <dependency>
+                    <groupId>org.apereo.cas</groupId>
+                    <artifactId>cas-server-support-rest</artifactId>
+                    <version>${cas.version}</version>
+                </dependency>
             </dependencies>
         </profile>
 
