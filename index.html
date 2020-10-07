@@ -5,11 +5,12 @@
     <title>Document</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="description" content="Description">
-    <meta name="viewport" content="width=device-width, user-scalable=no,
-        initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- 设置浏览器图标 -->
-    <!--  <link rel="icon" href="/favicon.ico" type="image/x-icon" />-->
-    <!--  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />-->
+<!--    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>-->
+<!--    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>-->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
 </head>
 <body>
@@ -30,21 +31,14 @@
         // 最大支持渲染的标题层级
         maxLevel: 4,
         // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级，建议配置为1或者2
-        subMaxLevel: 2
-    }
-</script>
-<script>
-    // 搜索配置
-    window.$docsify = {
+        subMaxLevel: 2,
         search: {
             maxAge: 86400000,
             paths: 'auto',
-            // Localization
             placeholder: {
                 '/zh-cn/': '搜索',
                 '/': 'Type to search'
             },
-            // Localization
             noData: {
                 '/zh-cn/': '找不到结果',
                 '/': 'No Results'
