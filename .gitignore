@@ -1,0 +1,13 @@
+.idea/
+.DS_Store
+Thumbs.db
+db.json
+debug.log
+*.log
+node_modules/
+public/
+.deploy*/
+.deploy_git/
+*.git
+package-lock.json
+
