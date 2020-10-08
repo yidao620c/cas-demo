@@ -1,5 +1,5 @@
 * [:dog: Throwable's Blog](https://www.xncoding.com)
-* [:cow: 公众号](https://mp.weixin.qq.com/s/zRvT46NeCYaJOsHcucro3w)
+* [:cow: 公众号](https://mp.weixin.qq.com/s/we61y1DNKabf5pQK2QqCMw)
 
 * 入门
   * [快速开始](zh-cn/quickstart.md)
