@@ -1,6 +1,6 @@
-# Spring
+# Cas
 
-> 这是一个神奇的主页
+> CAS实现单点登录全套流程文档，敬请期待。
 
-![](https://throwable-blog-1256189093.cos.ap-guangzhou.myqcloud.com/static/img/error.jpg)
+![](https://xnstatic-1253397658.file.myqcloud.com/caslog.jpg)
 

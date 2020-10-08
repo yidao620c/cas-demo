@@ -1,4 +1,4 @@
-![logo](https://public-1256189093.cos.ap-guangzhou.myqcloud.com/static/leaf.svg)
+![logo](https://xnstatic-1253397658.file.myqcloud.com/leaf.svg)
 
 # Spring Album <small>0.0.1</small>
 
@@ -8,5 +8,5 @@
 - `SpringBoot2.x`进阶和实战
 - `SpringBoot`源码系列
 
-[GitHub](https://github.com/zjcscut/spring-boot-guide)
-[Get Started](#Spring)
+[GitHub](https://github.com/yidao620c/cas-demo)
+[Get Started](#Cas)
