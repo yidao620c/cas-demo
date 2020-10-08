@@ -9,8 +9,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <!-- 设置浏览器图标 -->
-<!--    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>-->
-<!--    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>-->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
 <!--    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">-->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
     <style>
@@ -30,6 +30,10 @@
         repo: 'https://github.com/yidao620c/cas-demo',
         // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
         loadSidebar: true,
+        alias: {
+            '/.*/_sidebar.md': '/_sidebar.md',
+            '/.*/_navbar.md': '/_navbar.md',
+        },
         // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
         loadNavbar: true,
         // 封面支持，默认加载的是项目根目录下的_coverpage.md文件
