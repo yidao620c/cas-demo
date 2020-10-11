@@ -12,7 +12,7 @@
 
 一个基于标准的引入了`SpringBoot`组件的`Maven`项目的结构一般如下：
 
-```shell
+```yaml
 Root（项目根目录）
   - src
    - main
@@ -26,7 +26,7 @@ Root（项目根目录）
 
 `SpringBoot`的配置文件使用了`profile`（`profile`本身就有剖面、配置文件的含义，下面会把`profile`作为一个专有名词使用）的概念，可以类比为区分不同环境的标识符，一个`SpringBoot`应用允许使用多个`profile`，所以配置文件的格式必须为`application-${profile}.文件后缀`，例如：
 
-```shell
+```yaml
 src/main/resources
    - application.properties
    - application-dev.properties  # <-- profile = dev，开发环境配置

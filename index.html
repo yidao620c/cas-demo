@@ -11,25 +11,10 @@
     <!-- 设置浏览器图标 -->
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-<!--    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">-->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
+    <link rel="stylesheet" href="static/style.min.css">
+    <!--    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">-->
     <style>
-        .markdown-section h1 {
-            padding-top: 22px;
-        }
-        .markdown-section code, .markdown-section pre {
-            background-color: #f8f8f8;
-            font-family: Roboto Mono,Monaco,courier,monospace;
-        }
-        .markdown-section code:not([class*="lang-"]):not([class*="language-"]) {
-            border-radius: 2px;
-            color: #e96900;
-            background: #f8f8f8;
-            font-size: .8rem;
-            margin: 0 2px;
-            padding: 3px 5px;
-            white-space: pre-wrap;
-        }
     </style>
 </head>
 <body>
@@ -70,10 +55,6 @@
             depth: 2,
             hideOtherSidebarContent: false,
             namespace: 'yidao620c.github.io',
-            themeable: {
-                readyTransition : true, // default
-                responsiveTables: true  // default
-            },
         }
     }
 </script>
@@ -85,8 +66,6 @@
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 <!-- 搜索功能支持 -->
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-<!-- docsify-themeable (latest v0.x.x) -->
-<script src="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
 <!-- 代码高亮插件-->
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
@@ -95,5 +74,7 @@
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-go.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-yaml.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-properties.min.js"></script>
 </body>
 </html>
