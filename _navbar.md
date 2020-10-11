@@ -1,11 +1,9 @@
-* [:dog: Throwable's Blog](https://www.xncoding.com)
+* [:dog: XiongNeng's Blog](https://www.xncoding.com)
 * [:cow: 公众号](https://mp.weixin.qq.com/s/we61y1DNKabf5pQK2QqCMw)
 
-* 入门
-  * [快速开始](zh-cn/quickstart.md)
-  * [多页文档](zh-cn/more-pages.md)
-  * [定制导航栏](zh-cn/custom-navbar.md)
-  * [封面](zh-cn/cover.md)
+* Linux
+  * [Linux基础](Linux/Linux基础/Linux命令行.md)
+  * [Linux进阶](Linux/Linux进阶/服务器安装.md)
 
 * Language
   * [中文](/)
